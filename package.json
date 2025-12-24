@@ -15,18 +15,9 @@
     "test": "echo 'No tests specified yet'",
     "test:build": "npm run build && echo 'Build test passed'",
     "health-check": "npm run type-check && npm run lint --quiet && npm run build",
-    "pre-demo": "npm run health-check && echo 'Ready for demo!'",
     "clean": "rm -rf dist node_modules/.vite .vite",
     "setup": "bash scripts/setup.sh",
-    "build:prod": "bash scripts/build.sh",
-    "analyze": "npm run build && npx vite-bundle-analyzer dist/",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css,md}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css,md}\"",
-    "verify": "node scripts/master-verification.js",
-    "verify:full": "node scripts/master-verification.js --demo",
-    "verify:system": "node scripts/verify-system.js",
-    "verify:performance": "node scripts/performance-benchmark.js",
-    "verify:demo": "node scripts/demo-verification.js"
+    "build:prod": "bash scripts/build.sh"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

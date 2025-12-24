@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Homepage } from './pages/Homepage';
 import EnhancedMoEWorkspace from './pages/EnhancedMoEWorkspace';
 import TestWorkspace from './pages/TestWorkspace';
-import TestSimple from './pages/TestSimple';
-import MinimalWorkspace from './pages/MinimalWorkspace';
 import ErrorBoundary from './components/ErrorBoundary';
 
 // Simple theme hook

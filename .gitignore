@@ -16,12 +16,12 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
 
 # API Keys and secrets
 *.key
 *.pem
 config/secrets.json
-.env.example
 
 # IDE files
 .vscode/
@@ -174,3 +174,14 @@ $RECYCLE.BIN/
 # Project specific
 /public/uploads
 /storage/temp
+
+# Reports and temporary files (generated during testing/verification)
+*-report.json
+*-summary.json
+*_temp.*
+*.txt.bak
+
+# Qodo AI
+.qodo/
+*_temp.*
+*.txt.bak
